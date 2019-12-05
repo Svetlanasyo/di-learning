@@ -16,7 +16,7 @@ public class DiLearningApplication {
         ApplicationContext ctx = SpringApplication.run(DiLearningApplication.class, args);
 
         MyController controller = (MyController) ctx.getBean("myController");
-        
+
 
         System.out.println(controller.hello());
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
